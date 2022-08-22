@@ -29,7 +29,7 @@ const NavBar: React.FC<INavBarProps> = ({ darkMode, handleClick }) => {
                   }}
                   className={`${styles.navItem} ${
                     link.active === active && !link.type && styles.active
-                  } `}
+                  } ${link.type === "initials" && styles.initials} `}
                 >
                   {link.name}
                 </li>

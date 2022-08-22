@@ -3,6 +3,7 @@ import me from "../../public/img/self.png";
 import { info } from "../../utils/info";
 import EmojiBullet from "../EmojiBullet";
 import SocialIcon from "../SocialIcon";
+import Style from "./Home.module.css";
 function Home() {
   return (
     <>
@@ -18,7 +19,7 @@ function Home() {
               Hi, I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                 {" "}
-                {info.firstName}{" "}
+                {info.firstName} <span className={Style.hand}>🤚</span>
               </span>
             </h1>
             <h2 className="text-3xl font-bold "> {info.position}.</h2>

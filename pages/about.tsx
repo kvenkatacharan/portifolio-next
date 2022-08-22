@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Terminal from "../components/Terminal";
 import { info } from "../utils/info";
-const Home: NextPage = () => {
+const AboutPage: NextPage = () => {
   const firstName = info.firstName.toLowerCase();
 
   function aboutMeText() {
@@ -102,4 +102,4 @@ const Home: NextPage = () => {
     </div>
   );
 };
-export default Home;
+export default AboutPage;

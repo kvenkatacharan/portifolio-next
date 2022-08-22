@@ -2,8 +2,6 @@ import self from "../public/img/self.jpg";
 import mock1 from "../public/img/mock1.png";
 import mock2 from "../public/img/mock2.png";
 import mock3 from "../public/img/mock3.png";
-import mock4 from "../public/img/mock4.png";
-import mock5 from "../public/img/mock5.png";
 
 import {
   FaFacebookF,
@@ -31,7 +29,7 @@ of what each of the values mean.
 export const info = {
   firstName: "Charan",
   lastName: "K",
-  initials: "js", // the example uses first and last, but feel free to use three or more if you like.
+  initials: "CK", // the example uses first and last, but feel free to use three or more if you like.
   position: "I'm a front-end developer.",
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
@@ -84,7 +82,7 @@ export const info = {
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
   ],
-  bio: " Hello! I'm Charan, a front-end developer from Kakinada. I love creating web applications with React,I studied MSIT at JNTUK, I enjoy long walks on the beach, I've been working for Proximity works since may 2022",
+  bio: " Hello! I'm Charan, a front-end developer from Kakinada. I've 5+ years of experience as a Front-End Engineer on cross platform web/client-server applications design and development using React and Nextjs.",
   skills: {
     proficientWith: [
       "Javascript",
@@ -125,34 +123,22 @@ export const info = {
   portfolio: [
     // This is where your portfolio projects will be detailed
     {
-      title: "Project 1",
-      live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-      image: mock1,
+      title: "Online Doctor Consultation",
+      live: "https://medfit.vercel.app", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+      source: "https://github.com/kvenkatacharan/Medfit-UI", // this should be a link to the **repository** of the project, where the code is hosted.
+      imageSrc: mock1,
     },
     {
-      title: "Project 2",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
-      image: mock2,
+      title: "MoviePedia",
+      live: "https://moviepedia-xi.vercel.app",
+      source: "https://github.com/kvenkatacharan/moviepedia",
+      imageSrc: mock2,
     },
     {
-      title: "Project 3",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
-      image: mock3,
-    },
-    {
-      title: "Project 4",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
-      image: mock4,
-    },
-    {
-      title: "Project 5",
-      live: "https://paytonpierce.dev",
-      source: "https://github.com/paytonjewell",
-      image: mock5,
+      title: "Nextjs React Portfolio Template",
+      live: "https://kvenkatcharan.vercel.app",
+      source: "https://github.com/kvenkatacharan/portifolio-next",
+      imageSrc: mock3,
     },
   ],
 };
