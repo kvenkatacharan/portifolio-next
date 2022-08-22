@@ -1,0 +1,16 @@
+.nav {
+  @apply w-full;
+}
+.navContainer {
+  @apply flex  px-8 py-6 items-center justify-center;
+}
+
+.navItem {
+  @apply mx-16;
+}
+
+.active {
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, rgb(0, 255, 164), rgb(166, 104, 255));
+  border-image-slice: 1;
+}
