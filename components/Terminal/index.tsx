@@ -1,5 +1,8 @@
 import { FaCircle } from "react-icons/fa";
-function Terminal({ text }) {
+interface ITerminalProps {
+  text: JSX.Element;
+}
+const Terminal: React.FC<ITerminalProps> = ({ text }) => {
   return (
     <div className="max-w-3xl w-full mx-auto mb-12 ">
       <div className=" flex  w-full  p-3 rounded-t-xl  mt-3 space-x-2 bg-theme_gray">
@@ -18,6 +21,6 @@ function Terminal({ text }) {
       </div>
     </div>
   );
-}
+};
 
 export default Terminal;

@@ -1,7 +1,11 @@
 import React from "react";
 
 import styles from "Toggler.module.css";
-function Toggler({ darkMode, handleClick }) {
+interface ITogglerProps {
+  darkMode: boolean;
+  handleClick: () => void;
+}
+const Toggler: React.FC<ITogglerProps> = ({ darkMode, handleClick }) => {
   return (
     <div className="text-2xl">
       {darkMode ? (
@@ -15,6 +19,6 @@ function Toggler({ darkMode, handleClick }) {
       )}
     </div>
   );
-}
+};
 
 export default Toggler;

@@ -4,7 +4,11 @@ import Image from "next/image";
 import NavBar from "../NavBar";
 import styles from "./BaseLayout.module.css";
 import { Children, useState } from "react";
-const BaseLayout: NextPage = ({ children }) => {
+type BaseLayoutProps = {
+  children: React.ReactNode; // 👈️ type children
+};
+
+const BaseLayout = (props: BaseLayoutProps) => {
   let [darkMode, setDarkMode] = useState(false);
   function handleClick() {
     setDarkMode(!darkMode);
@@ -21,7 +25,7 @@ const BaseLayout: NextPage = ({ children }) => {
         <div>
           <NavBar darkMode={darkMode} handleClick={handleClick} />
         </div>
-        <div>{children}</div>
+        <div>{props.children}</div>
         <div>
           <footer className={styles.footer}>
             <div className="text-xs text-gray-500">

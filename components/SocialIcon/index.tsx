@@ -1,6 +1,11 @@
 import React from "react";
 
-function SocialIcon({ link, Icon, label }) {
+interface ISocialIconProps {
+  link: string;
+  Icon: React.ElementType;
+  label: string;
+}
+const SocialIcon: React.FC<ISocialIconProps> = ({ link, Icon, label }) => {
   return (
     <a
       target="_blank"
@@ -12,6 +17,6 @@ function SocialIcon({ link, Icon, label }) {
       <Icon />
     </a>
   );
-}
+};
 
 export default SocialIcon;
