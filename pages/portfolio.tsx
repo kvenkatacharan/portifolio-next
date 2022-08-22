@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
-
-const Home: NextPage = () => {
-  return <div>portifolio</div>;
+import PortfolioComponent from "../components/Portfolio";
+const PortfolioPage: NextPage = () => {
+  return <PortfolioComponent />;
 };
 
-export default Home;
+export default PortfolioPage;

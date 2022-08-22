@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import HomeComponent from "../components/Home";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <>
       {" "}
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;
