@@ -6,7 +6,11 @@ import styles from "../NavBar/NavBar.module.css";
 import Toggler from "../Toggler";
 import { useRouter } from "next/router";
 
-function NavBar({ darkMode, handleClick }) {
+interface INavBarProps {
+  darkMode: boolean;
+  handleClick: () => void;
+}
+const NavBar: React.FC<INavBarProps> = ({ darkMode, handleClick }) => {
   const router = useRouter();
   const [active, setActive] = useState(
     router.pathname == "/" ? "home" : router.pathname.substring(1)
@@ -39,6 +43,6 @@ function NavBar({ darkMode, handleClick }) {
       </nav>
     </header>
   );
-}
+};
 
 export default NavBar;

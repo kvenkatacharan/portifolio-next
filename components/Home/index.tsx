@@ -9,7 +9,7 @@ function Home() {
       <div className="flex items-center justify-center max-w-4xl mx-auto  h-[600px]     ">
         <div className="flex space-x-12">
           <div className="rounded-full w-[40vh] h-[40vh] flex justify-center bg-gradient-to-r from-green-400 to-blue-500 ">
-            <Image src={me} className="rounded-full" />
+            <Image src={me} alt="profile" className="rounded-full" />
           </div>
 
           <div className=" mt-2  space-y-4">
