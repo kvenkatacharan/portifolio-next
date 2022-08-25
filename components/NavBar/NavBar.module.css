@@ -1,5 +1,5 @@
 .nav {
-  @apply w-full;
+  @apply w-full fixed;
 }
 .navContainer {
   @apply flex  px-8 py-6 items-center justify-center;

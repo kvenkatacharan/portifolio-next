@@ -22,21 +22,17 @@ const BaseLayout = (props: BaseLayoutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
-        <div>
-          <NavBar darkMode={darkMode} handleClick={handleClick} />
-        </div>
+        <NavBar darkMode={darkMode} handleClick={handleClick} />
         <div>{props.children}</div>
-        <div>
-          <footer className={styles.footer}>
-            <div className="text-xs text-gray-500">
-              <p>
-                template created with &hearts; by{" "}
-                <a href={"https://"}>Venkata Charan </a>
-              </p>
-              <p>&copy; 2022</p>
-            </div>
-          </footer>
-        </div>
+        <footer className={styles.footer}>
+          <div className="text-xs text-gray-500">
+            <p>
+              template created with &hearts; by{" "}
+              <a href={"https://"}>Venkata Charan </a>
+            </p>
+            <p>&copy; 2022</p>
+          </div>
+        </footer>
       </div>
     </div>
   );

@@ -25,10 +25,12 @@
   transition: all 400ms;
 }
 .main {
-  @apply flex flex-col min-h-screen justify-between;
+  @apply flex flex-col min-h-screen  w-full justify-between;
 }
 
 .footer {
+  position: absolute;
+  bottom: 0px;
   color: #1f1f1f;
   display: flex;
   flex: 1;

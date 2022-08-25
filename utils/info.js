@@ -14,11 +14,6 @@ import {
 how to make this template work best for you! */
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
 
 /*
 So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
@@ -35,7 +30,6 @@ export const info = {
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
   miniBio: [
-    // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: "🍫",
       text: "Fueled by chocolate",
@@ -55,17 +49,7 @@ export const info = {
   ],
   socials: [
     {
-      link: "https://facebook.com",
-      icon: FaFacebookF,
-      label: "facebook",
-    },
-    {
-      link: "https://instagram.com",
-      icon: FaInstagram,
-      label: "instagram",
-    },
-    {
-      link: "https://github.com",
+      link: "https://github.com/kvenkatacharan",
       icon: FaGithub,
       label: "github",
     },

@@ -1,7 +1,8 @@
 import { info } from "../../utils/info";
 import React, { useState, useEffect } from "react";
 import { navLinks } from "../../utils/data";
-import Link from "next/link";
+//import Link from "next/link";
+import { Link } from "react-scroll";
 import styles from "../NavBar/NavBar.module.css";
 import Toggler from "../Toggler";
 import { useRouter } from "next/router";
@@ -22,14 +23,20 @@ const NavBar: React.FC<INavBarProps> = ({ darkMode, handleClick }) => {
         <ul className={styles.navContainer}>
           {navLinks.map((link, index) => {
             return (
-              <Link key={index} href={link.path}>
+              <Link
+                key={index}
+                className={`${styles.navItem}`}
+                activeClass={` ${!link.type && styles.active} ${
+                  link.type === "initials" && styles.initials
+                } `}
+                smooth
+                spy
+                to={link.name}
+              >
                 <li
                   onClick={() => {
                     setActive(link.active);
                   }}
-                  className={`${styles.navItem} ${
-                    link.active === active && !link.type && styles.active
-                  } ${link.type === "initials" && styles.initials} `}
                 >
                   {link.name}
                 </li>
