@@ -6,7 +6,7 @@ import Style from "../styles/Home.module.css";
 const HomePage: NextPage = () => {
   return (
     <>
-      <section className={Style.section} id="Home">
+      <section id="Home" className={Style.section}>
         {" "}
         <HomeComponent />
       </section>

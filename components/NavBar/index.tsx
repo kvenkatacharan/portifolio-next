@@ -19,7 +19,7 @@ const NavBar: React.FC<INavBarProps> = ({ darkMode, handleClick }) => {
 
   return (
     <header>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} ${!darkMode && styles.navBackground}`}>
         <ul className={styles.navContainer}>
           {navLinks.map((link, index) => {
             return (

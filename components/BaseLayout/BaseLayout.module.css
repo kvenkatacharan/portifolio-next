@@ -29,8 +29,6 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: 0px;
   color: #1f1f1f;
   display: flex;
   flex: 1;

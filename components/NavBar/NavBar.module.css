@@ -1,8 +1,12 @@
 .nav {
-  @apply w-full fixed;
+  @apply w-full fixed  z-50 bg-theme_dark bg-opacity-90;
+}
+
+.navBackground {
+  background: rgba(240, 240, 240, 0.9);
 }
 .navContainer {
-  @apply flex  px-8 py-6 items-center justify-center;
+  @apply flex  px-8 py-2 items-center justify-center;
 }
 
 .initials {
